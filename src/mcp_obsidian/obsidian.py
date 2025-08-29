@@ -549,8 +549,8 @@ class Obsidian():
         Returns:
             None on success
         """
-        url = f"{self.get_base_url()}/open/{urllib.parse.quote(filename)}"
-        params = {"newLeaf": str(new_leaf).lower()} if new_leaf else {}
+        url = f"{self.get_base_url()}/open/{urllib.parse.quote(filename, safe='/')}"
+        params = {"newLeaf": str(new_leaf).lower()}
         
         def call_fn():
             response = requests.post(url, headers=self._get_headers(), params=params, verify=self.verify_ssl, timeout=self.timeout)
