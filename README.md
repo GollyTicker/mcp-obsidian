@@ -89,9 +89,10 @@ The server includes robust path encoding that handles filenames with spaces, spe
 
 ### Technical Features
 
-- **Idempotent encoding**: Prevents double-encoding of already encoded paths
-- **Unicode normalization**: Ensures cross-platform filename consistency  
-- **RFC 3986 compliant**: Proper URL encoding while preserving directory structure
+- **Idempotent**: Prevents double-encoding of already encoded paths
+- **Unicode normalization**: Normalizes to NFC for cross-platform consistency
+- **RFC 3986 compliant**: Preserves safe characters (-_.~) while encoding others  
+- **Directory structure preservation**: Maintains "/" separators and trailing "/" slashes
 - **Backward compatible**: No changes to existing simple filename behavior
 
 ### Example Operations
@@ -102,6 +103,7 @@ obsidian_get_file_contents("Projects/Meeting Notes 📝.md")
 obsidian_append_content("Área/configuração.md", "New content")
 obsidian_list_files_in_dir("Special (Folder) & More")
 obsidian_patch_content("Research #1/data + analysis.md", ...)
+obsidian_list_files_in_dir("Reports/2024/")
 ```
 
 ## Configuration
