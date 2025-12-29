@@ -9,9 +9,19 @@ dependencies = [
  "python-dotenv>=1.0.1",
  "requests>=2.32.3",
 ]
+
 [[project.authors]]
 name = "Markus Pfundstein"
 email = "markus@life-electronic.nl"
+
+[[project.maintainers]]
+name = "ernestkoe"
+email = "ernestkoe@users.noreply.github.com"
+
+[project.urls]
+Homepage = "https://github.com/ernestkoe/mcp-obsidian"
+Repository = "https://github.com/ernestkoe/mcp-obsidian"
+"Original Project" = "https://github.com/MarkusPfundstein/mcp-obsidian"
 
 [build-system]
 requires = [ "hatchling",]
