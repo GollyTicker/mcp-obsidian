@@ -1,6 +1,6 @@
 # MCP server for Obsidian
 
-MCP server providing 25 tools to interact with Obsidian via the Local REST API community plugin, including active note operations, periodic notes management, and command execution.
+MCP server providing 26 tools to interact with Obsidian via the Local REST API community plugin, including active note operations, periodic notes management, and command execution.
 
 > **Note**: This is a maintained fork of [MarkusPfundstein/mcp-obsidian](https://github.com/MarkusPfundstein/mcp-obsidian).
 
@@ -20,7 +20,7 @@ The core Daily Notes plugin (built into Obsidian) is sufficient for daily period
 
 ## Tools
 
-The server implements 25 tools to interact with Obsidian, organized by functionality:
+The server implements 26 tools to interact with Obsidian, organized by functionality:
 
 #### File & Content Operations
 - obsidian_list_files_in_vault: Lists all files and directories in the root directory of your Obsidian vault
@@ -56,6 +56,7 @@ The server implements 25 tools to interact with Obsidian, organized by functiona
 #### Advanced Features
 - obsidian_get_recent_periodic_notes: Get most recent periodic notes for specified period type
 - obsidian_get_recent_changes: Get recently modified files in the vault
+- obsidian_dataview_query: Execute a Dataview DQL query against the vault (requires Dataview plugin)
 
 ### Example prompts
 
