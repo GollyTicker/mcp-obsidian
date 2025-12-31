@@ -7,6 +7,64 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- version list -->
 
+## v0.1.0 (2025-12-31)
+
+### Bug Fixes
+
+- Remove build_command from semantic-release config
+  ([`ec40b32`](https://github.com/GollyTicker/mcp-obsidian/commit/ec40b32eb0bcaaca46ad48ce042122401e8feab1))
+
+The semantic-release action runs in its own container without uv. Since we're not publishing to
+  PyPI, we don't need to build.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+- Remove PyPI publishing from release workflow
+  ([`203568e`](https://github.com/GollyTicker/mcp-obsidian/commit/203568eb5f9b272196e11fc0598b7fb6a5ed4ff0))
+
+Not publishing to PyPI, only GitHub Releases.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+- Update .atlas manifest with correct repo URL
+  ([`06b771a`](https://github.com/GollyTicker/mcp-obsidian/commit/06b771a767f7e75b674ea48d14626152b77efaa3))
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+### Chores
+
+- Update openapi.yaml
+  ([`f3d247a`](https://github.com/GollyTicker/mcp-obsidian/commit/f3d247af0ae57245a2d764be751d4463af4b1cd7))
+
+yoru -> your
+
+### Features
+
+- Add 'limit' of contexts to return in simple search
+  ([`aa3e962`](https://github.com/GollyTicker/mcp-obsidian/commit/aa3e962b658e80802302aa9041ad8b907b24f856))
+
+- Add host environment variable support
+  ([`8601e44`](https://github.com/GollyTicker/mcp-obsidian/commit/8601e445028eb42b5a78464733785c12a0f51a81))
+
+- Add semantic-release for automated versioning
+  ([`63d7c01`](https://github.com/GollyTicker/mcp-obsidian/commit/63d7c01252d8b655da6e5de8eda76830b5950969))
+
+- Add python-semantic-release to dev dependencies - Configure semantic-release in pyproject.toml -
+  Create GitHub Actions release workflow with PyPI publishing - Add CHANGELOG.md with version
+  history - Add __version__ to package __init__.py - Update CI to only run on pull requests (release
+  workflow handles main)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+
 ## v0.3.1 (2025-12-29)
 
 ### Bug Fixes
