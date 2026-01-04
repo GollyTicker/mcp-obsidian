@@ -118,7 +118,7 @@ class QueryFilesRecursivelyToolHandler(ToolHandler):
                 "properties": {
                     "query": {
                         "type": "string",
-                        "description": "The search term to query for in the file names",
+                        "description": "The search term to query for in the file names (case insensitive)",
                     },
                 },
                 "required": ["query"],
@@ -199,7 +199,7 @@ class GetFileContentsByNameToolHandler(ToolHandler):
                 "properties": {
                     "name": {
                         "type": "string",
-                        "description": "Name of the file to open (without the '.md')"
+                        "description": "Name of the file to open (without the '.md'; case-sensitive)"
                     },
                 },
                 "required": ["name"],
